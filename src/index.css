@@ -10,3 +10,15 @@
     font-family: "Raleway", sans-serif;
   }
 }
+
+@layer utilities {
+  .boxshadow {
+    box-shadow: 0 0 5px #03e9f4, 0 0 20px #03e9f4, 0 0 5px #03e9f4, 0 0 10px;
+  }
+  .image {
+    box-shadow: 0 0 5px #03e9f4, 0 0 20px #03e9f4, 0 0 5px #03e9f4, 0 0 2px;
+  }
+  .links {
+    box-shadow: 0 0 5px #03e9f4, 0 0 20px #03e9f4, 0 0 5px #03e9f4, 0 0 2px;
+  }
+}
