@@ -28,7 +28,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black/80 backdrop-blur-sm z-10 px-4 ">
+    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black/70 backdrop-blur-sm z-10 px-4 ">
       <div>
         <h1 className="text-5xl  ml-2 cursor-pointer relative z-10 track tracking-wide  hover:tracking-[6px] duration-300">
           AF<span className="text-blue-500 opacity-95 ">T</span>AB

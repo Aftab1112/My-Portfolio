@@ -47,7 +47,7 @@ export default function SocialIcons() {
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed opacity-70 backdrop-blur-sm">
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
