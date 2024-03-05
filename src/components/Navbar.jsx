@@ -38,7 +38,7 @@ export default function Navbar() {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className=" px-4 cursor-pointer capitalize text-gray-500 hover:text-white   duration-500 hover:scale-x-110 hover:rounded-lg hover:bg-inherit  text-xl hover:links"
+            className=" px-4 cursor-pointer capitalize text-gray-500 hover:text-white   duration-200 hover:scale-x-110 hover:rounded-lg hover:bg-inherit  text-xl hover:demo"
           >
             {link}
           </li>

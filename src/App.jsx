@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import SocialIcons from "./components/SocialIcons";
+import Technologies from "./components/Technologies";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Projects />
       <SocialIcons />
+      <Technologies />
     </div>
   );
 }
