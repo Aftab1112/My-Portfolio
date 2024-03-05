@@ -39,7 +39,7 @@ export default function Home() {
           <img
             src={myImage}
             alt="my-profile"
-            className="rounded-2xl mx-auto w-1/2 hover:image duration-300 "
+            className="rounded-2xl mx-auto w-1/2 hover:image duration-300 mb-[100px] md:mb-0 "
           />
         </div>
       </div>

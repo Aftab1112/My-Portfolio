@@ -28,7 +28,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black px-4">
+    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black/80 backdrop-blur-sm z-10 px-4 ">
       <div>
         <h1 className="text-5xl  ml-2 cursor-pointer relative z-10 track tracking-wide  hover:tracking-[6px] duration-300">
           AF<span className="text-blue-500 opacity-95 ">T</span>AB
@@ -38,7 +38,7 @@ export default function Navbar() {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize text-gray-500 hover:text-white   duration-500 hover:scale-x-110 hover:rounded-lg hover:bg-inherit   text-xl hover:boxshadow"
+            className=" px-4 cursor-pointer capitalize text-gray-500 hover:text-white   duration-500 hover:scale-x-110 hover:rounded-lg hover:bg-inherit  text-xl hover:links"
           >
             {link}
           </li>
