@@ -7,7 +7,7 @@ import react from "../images/react.png";
 import vite from "../images/vite.png";
 import github from "../images/github.png";
 import netlify from "../images/netlify-logo.svg";
-import vercel from "../images/vercel-logo.svg";
+import nodejs from "../images/nodejs-logo.svg";
 
 export default function Technologies() {
   const icons = [
@@ -61,28 +61,28 @@ export default function Technologies() {
     },
     {
       id: 9,
-      src: vercel,
-      title: "VERCEL",
-      style: "shadow-gray-400",
+      src: nodejs,
+      title: "NODE JS",
+      style: "shadow-green-400",
     },
   ];
 
   return (
     <div
       name="technologies"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen "
+      className="bg-gradient-to-b from-gray-800 to-black w-full  "
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div className="flex flex-col mt-48 justify-center items-center">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full md:h-auto text-white">
+        <div className="flex flex-col mt-0 md:mt-20 justify-center items-center">
           <p className="text-4xl font-bold border-b-4  border-b-gray-500 p-2 inline">
             Technologies
           </p>
-          <p className="py-6">
+          <p className="py-6 text-center">
             These are the tools with which I am experienced.
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full  grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
           {icons.map(({ id, src, title, style }) => (
             <div
               key={id}
