@@ -65,15 +65,14 @@ export default function Projects() {
       name="projects"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
     >
-      <div className="max-w-screen-lg px-4 mx-auto flex flex-col justify-center w-full h-full ">
+      <div className="max-w-screen-lg px-4 mx-auto flex flex-col justify-center w-full h-full  md:pt-40 pb-3 md:pb-0">
         <div className="pb-8 flex flex-col justify-center items-center mt-5 md:mt-0">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Projects
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 py-3 text-center ">
+            My Recent Projects
           </p>
-          <p className="py-6 text-xl">Here are some of my recent projects</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mb:mb-0">
           {projects.map(({ id, src, para, demoLink, codeLink }) => (
             <div
               key={id}

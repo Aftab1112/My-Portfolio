@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -28,19 +29,25 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black/70 backdrop-blur-sm z-10 px-4 ">
+    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black/70 backdrop-blur-md z-10 px-4 ">
       <div>
-        <h1 className="text-5xl  ml-2 cursor-pointer relative z-10 track tracking-wide  hover:tracking-[6px] duration-300">
+        <Link
+          to="home"
+          smooth
+          className="text-5xl  ml-2 cursor-pointer relative z-10 track tracking-wide  hover:tracking-[6px] duration-300"
+        >
           AF<span className="text-blue-500 opacity-95 ">T</span>AB
-        </h1>
+        </Link>
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className=" px-4 cursor-pointer capitalize text-gray-500 hover:text-white   duration-200 hover:scale-x-110 hover:rounded-lg hover:bg-inherit  text-xl hover:demo"
+            className=" px-4 cursor-pointer capitalize text-gray-500 hover:text-white   duration-200 hover:rounded-lg hover:bg-inherit  text-xl hover:newlink"
           >
-            {link}
+            <Link to={link} smooth duration={800}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -60,9 +67,16 @@ export default function Navbar() {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="hover:boxshadow px-4 cursor-pointer capitalize py-5 text-4xl  hover:text-white hover:shadow-lg hover:bg-white/30 hover:rounded-full duration-500 hover:scale-75 hover:ring-2 hover:ring-blue-500 hover:ring-opacity-95"
+              className="hover:boxshadow px-4 cursor-pointer capitalize py-5 text-3xl  hover:text-white rounded-lg duration-200 "
             >
-              {link}
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={800}
+              >
+                {link}
+              </Link>
             </li>
           ))}
         </ul>

@@ -70,11 +70,11 @@ export default function Technologies() {
   return (
     <div
       name="technologies"
-      className="bg-gradient-to-b from-gray-800 to-black w-full  "
+      className="bg-gradient-to-b from-gray-800 to-black w-full   "
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full md:h-auto text-white">
-        <div className="flex flex-col mt-0 md:mt-20 justify-center items-center">
-          <p className="text-4xl font-bold border-b-4  border-b-gray-500 p-2 inline">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full md:h-auto text-white pt-0 md:pt-24 ">
+        <div className="flex flex-col mt-0  justify-center items-center">
+          <p className="text-4xl font-bold border-b-4  border-b-gray-500 p-2 inline ">
             Technologies
           </p>
           <p className="py-6 text-center">
@@ -93,7 +93,7 @@ export default function Technologies() {
               }
             >
               <img src={src} alt="" className="w-20 mx-auto" />
-              <p className="mt-4">{title}</p>
+              <p className="mt-4 text-center text-sm md:text-base">{title}</p>
             </div>
           ))}
         </div>

@@ -2,6 +2,7 @@ import Typewriter from "typewriter-effect";
 import React from "react";
 import myImage from "../images/my-image.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { scroller } from "react-scroll";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
               options={{
                 strings: ["AFTAB", "A FRONT-END DEVELOPER"],
                 autoStart: true,
+                delay: 150,
                 loop: true,
               }}
             />
@@ -27,9 +29,16 @@ export default function Home() {
             Forward-thinking student with a passion for Front-End Development.
           </p>
           <div className="flex justify-center md:flex self-start">
-            <button className="group text-white text-xl w-fit px-4 py-1 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-600 to to-blue-800 cursor-pointer hover:boxshadow duration-500">
+            <button
+              onClick={() =>
+                scroller.scrollTo("projects", {
+                  smooth: true,
+                })
+              }
+              className=" tracking-wider group text-white text-xl w-fit px-4 py-1 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-600 to to-blue-800 cursor-pointer hover:boxshadow duration-500"
+            >
               Projects
-              <span className="group-hover:rotate-90   p-2 duration-300 ">
+              <span className="group-hover:rotate-90  p-2 duration-300 ">
                 <FaArrowRightLong />
               </span>
             </button>
@@ -39,7 +48,7 @@ export default function Home() {
           <img
             src={myImage}
             alt="my-profile"
-            className="rounded-2xl mx-auto w-1/2 hover:image duration-300 "
+            className="rounded-2xl mx-auto w-1/2 hover:image duration-300 mb-16 md:mb-0 "
           />
         </div>
       </div>
