@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { SiWakatime } from "react-icons/si";
 
 export default function SocialIcons() {
   const links = [
@@ -35,6 +36,16 @@ export default function SocialIcons() {
     },
     {
       id: 4,
+      child: (
+        <>
+          Wakatime
+          <SiWakatime size={30} />
+        </>
+      ),
+      href: "https://wakatime.com/@Aftab",
+    },
+    {
+      id: 5,
       child: (
         <>
           Resume <BsFillPersonLinesFill size={30} />
