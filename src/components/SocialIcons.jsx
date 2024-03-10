@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { SiWakatime } from "react-icons/si";
+import { motion } from "framer-motion";
 
 export default function SocialIcons() {
   const links = [
@@ -58,7 +59,12 @@ export default function SocialIcons() {
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed opacity-70 backdrop-blur-sm">
+    <motion.div
+      initial={{ translateX: -200 }}
+      animate={{ translateX: 0 }}
+      transition={{ duration: 0.5 }}
+      className="hidden lg:flex flex-col top-[35%] left-0 fixed opacity-70 backdrop-blur-sm"
+    >
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
@@ -81,6 +87,6 @@ export default function SocialIcons() {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 }

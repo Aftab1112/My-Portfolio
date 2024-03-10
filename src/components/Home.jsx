@@ -3,6 +3,7 @@ import React from "react";
 import myImage from "../images/my-image.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { scroller } from "react-scroll";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -10,8 +11,13 @@ export default function Home() {
       name="home"
       className=" h-screen w-full bg-gradient-to-b from-black via-black to-gray-800  "
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
+      <motion.div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+        <motion.div
+          initial={{ opacity: 0, translateX: -200 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col justify-center h-full"
+        >
           <h2 className="text-4xl sm:text-4xl font-bold text-white ">
             Hello , I'm
           </h2>
@@ -43,15 +49,19 @@ export default function Home() {
               </span>
             </button>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateX: 200 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <img
             src={myImage}
             alt="my-profile"
             className="rounded-2xl mx-auto w-1/2 hover:image duration-300 mb-16 md:mb-0 "
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
