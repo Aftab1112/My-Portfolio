@@ -54,7 +54,7 @@ export default function SocialIcons() {
       ),
       href: "/resume.pdf",
       style: "rounded-br-lg",
-      download: "true",
+      download: "Aftab Reshamwale - FrontEnd Developer",
     },
   ];
 

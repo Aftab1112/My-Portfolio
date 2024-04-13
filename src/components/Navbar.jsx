@@ -30,8 +30,12 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black/70 backdrop-blur-md z-10 px-4 ">
-      <div>
+    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black/70 backdrop-blur-md z-10 px-3 ">
+      <motion.div
+        initial={{ opacity: 0, translateX: -200 }}
+        animate={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <Link
           to="home"
           smooth
@@ -53,15 +57,15 @@ export default function Navbar() {
             AB
           </motion.span>
         </Link>
-      </div>
+      </motion.div>
       <ul className="hidden md:flex font-bold">
         {links.map(({ id, link }) => (
           <motion.li
             initial={{ opacity: 0, translateY: -200 }}
             animate={{ opacity: 1, translateY: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ staggerChildren: 0.5 }}
             key={id}
-            className=" px-4 cursor-pointer capitalize text-gray-500 hover:text-white   duration-200 hover:rounded-lg hover:bg-inherit  text-xl hover:newlink"
+            className="navlink px-4 cursor-pointer capitalize text-gray-500 duration-200  text-2xl"
           >
             <Link to={link} smooth duration={800}>
               {link}

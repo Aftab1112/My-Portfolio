@@ -21,7 +21,7 @@ export default function About() {
           </div>
         </Fade>
         <Fade direction="up" delay={600} triggerOnce>
-          <p className="text-xl    ">
+          <p className="text-2xl">
             Hello, I am Aftab Reshamwale, currently in my final year of study in
             the B.E. CSE department. I am passionate about frontend development,
             particularly in React and JavaScript. I am self-taught in these
@@ -34,7 +34,7 @@ export default function About() {
         </Fade>
         <br />
         <Fade direction="up" delay={600} triggerOnce>
-          <p className="text-xl">
+          <p className="text-2xl">
             Please take a moment to explore my projects on GitHub and feel free
             to provide advice and corrections to help me improve my frontend
             skills.

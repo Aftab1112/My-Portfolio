@@ -41,10 +41,10 @@ export default function Home() {
                   smooth: true,
                 })
               }
-              className=" tracking-wider group text-white text-xl w-fit px-4 py-1 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-600 to to-blue-800 cursor-pointer hover:boxshadow duration-500"
+              className="project-btn group tracking-wider font-semibold group text-white text-xl w-fit px-4 py-1 my-2 flex items-center rounded-md "
             >
               Projects
-              <span className="group-hover:rotate-90  p-2 duration-300 ">
+              <span className="group-hover:rotate-90  p-2 duration-150 ">
                 <FaArrowRightLong />
               </span>
             </button>

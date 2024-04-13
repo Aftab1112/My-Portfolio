@@ -31,3 +31,60 @@
     box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 2px;
   }
 }
+
+.navlink {
+  position: relative;
+  transition: 0.2s;
+}
+
+.navlink:hover {
+  color: #ffffff;
+}
+.navlink::after {
+  content: "";
+  position: absolute;
+  background-color: #78909c;
+  height: 3.5px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.2s;
+}
+
+.navlink:hover::after {
+  width: 100%;
+}
+
+.project-btn {
+  border: 1px solid #ffffff;
+  color: white;
+  background: none;
+  cursor: pointer;
+  transition: 0.5 s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.project-btn:hover {
+  color: black;
+}
+
+.project-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #fff;
+  transition: 0.5s;
+  z-index: -1;
+}
+.project-btn::before {
+  left: 0;
+  top: 0;
+}
+
+.project-btn:hover::before {
+  width: 180%;
+}
