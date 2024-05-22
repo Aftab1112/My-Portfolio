@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
-import html from "../images/html.png";
-import css from "../images/css.png";
-import tailwind from "../images/tailwind.png";
-import javascript from "../images/javascript.png";
+import mongodb from "../images/mongodb.png";
+import express from "../images/express.png";
 import react from "../images/react.png";
-import vite from "../images/vite.png";
-import github from "../images/github.png";
-import netlify from "../images/netlify-logo.svg";
 import nodejs from "../images/nodejs-logo.svg";
+import mysql from "../images/mysql.png";
+import tailwind from "../images/tailwind.png";
+import framermotion from "../images/framermotion.png";
+import github from "../images/github.png";
+import vercel from "../images/vercel.png";
 import { motion, useInView } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
 
@@ -17,57 +17,57 @@ export default function Technologies() {
   const icons = [
     {
       id: 1,
-      src: html,
-      title: "HTML",
-      style: "shadow-orange-500",
+      src: mongodb,
+      title: "MongoDB",
+      style: "shadow-green-500",
     },
     {
       id: 2,
-      src: css,
-      title: "CSS",
-      style: "shadow-blue-500",
+      src: express,
+      title: "Express JS",
+      style: "shadow-gray-500",
     },
     {
       id: 3,
-      src: tailwind,
-      title: "TAILWIND  ",
-      style: "shadow-cyan-600",
-    },
-    {
-      id: 4,
-      src: javascript,
-      title: "JAVASCRIPT",
-      style: "shadow-yellow-600",
-    },
-    {
-      id: 5,
       src: react,
-      title: "REACT JS",
+      title: "React JS  ",
       style: "shadow-cyan-400",
     },
     {
-      id: 6,
-      src: vite,
-      title: "VITE",
-      style: "shadow-purple-500",
-    },
-    {
-      id: 7,
-      src: github,
-      title: "GITHUB",
-      style: "shadow-gray-400",
-    },
-    {
-      id: 8,
-      src: netlify,
-      title: "NETLIFY",
-      style: "shadow-teal-400",
-    },
-    {
-      id: 9,
+      id: 4,
       src: nodejs,
       title: "NODE JS",
       style: "shadow-green-400",
+    },
+    {
+      id: 5,
+      src: mysql,
+      title: "My SQL",
+      style: "shadow-blue-400",
+    },
+    {
+      id: 6,
+      src: tailwind,
+      title: "Tailwind CSS",
+      style: "shadow-cyan-600",
+    },
+    {
+      id: 7,
+      src: framermotion,
+      title: "Framer Motion",
+      style: "shadow-pink-400",
+    },
+    {
+      id: 8,
+      src: github,
+      title: "Github",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 9,
+      src: vercel,
+      title: "Vercel",
+      style: "shadow-gray-200",
     },
   ];
 
