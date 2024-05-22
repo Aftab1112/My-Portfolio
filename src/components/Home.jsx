@@ -24,7 +24,11 @@ export default function Home() {
           <h2 className="text-4xl sm:text-4xl font-bold text-white h-20 w-[270px] ">
             <Typewriter
               options={{
-                strings: ["AFTAB", "A FRONT-END DEVELOPER"],
+                strings: [
+                  "AFTAB;",
+                  "A FRONT-END DEVELOPER;",
+                  "A MERN STACK DEVELOPER;",
+                ],
                 autoStart: true,
                 delay: 150,
                 loop: true,
@@ -32,7 +36,8 @@ export default function Home() {
             />
           </h2>
           <p className="text-gray-500 py-3 text-xl max-w-md  ">
-            Forward-thinking student with a passion for Front-End Development.
+            Forward-thinking student with a passion for Front-End and MERN Stack
+            Dev.
           </p>
           <div className="flex justify-center md:flex self-start">
             <button
@@ -58,7 +63,7 @@ export default function Home() {
           <img
             src={myImage}
             alt="my-profile"
-            className="rounded-2xl mx-auto w-1/2 hover:image duration-300 mb-16 md:mb-0 "
+            className="rounded-2xl mx-auto w-1/2 hover:project-box duration-300 mb-16 md:mb-0 "
           />
         </motion.div>
       </motion.div>

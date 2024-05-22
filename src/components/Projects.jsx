@@ -5,6 +5,7 @@ import restCountriesApi from "../images/rest-countries-api.png";
 import textEditor from "../images/text-editor-app.png";
 import theShoeCompany from "../images/the-shoe-company.png";
 import weatherApp from "../images/weather-app.png";
+import todoApp from "../images/To-Do App.png";
 import { useInView } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
 import { motion } from "framer-motion";
@@ -18,38 +19,38 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      src: todoApp,
+      para: "MERN Stack ToDo App",
+      demoLink: "https://react-todo-app-rho-beige.vercel.app/",
+      codeLink: "https://github.com/Aftab1112/React-Todo-App",
+    },
+    {
+      id: 2,
       src: restCountriesApi,
       para: "Countries API",
       demoLink: "https://where-in-the-world-are-you.netlify.app/",
       codeLink: "https://github.com/Aftab1112/Country-API_React",
     },
     {
-      id: 2,
+      id: 3,
       src: newsApp,
       para: "News App",
       demoLink: "https://github.com/Aftab1112/News-App",
       codeLink: "https://github.com/Aftab1112/News-App",
     },
     {
-      id: 3,
+      id: 4,
       src: textEditor,
       para: "Text Editor App",
       demoLink: "https://aftab1112.github.io/Text-Editor-App/",
       codeLink: "https://github.com/Aftab1112/Text-Editor-App",
     },
     {
-      id: 4,
+      id: 5,
       src: expenseTrackerApp,
       para: "Expense Tracker App",
       demoLink: "https://expense-tracker-neon-beta.vercel.app/",
       codeLink: "https://github.com/Aftab1112/Expense-Tracker-React",
-    },
-    {
-      id: 5,
-      src: weatherApp,
-      para: "Weather App",
-      demoLink: "https://aftab1112.github.io/Weather-App/",
-      codeLink: "https://github.com/Aftab1112/Weather-App",
     },
     {
       id: 6,
@@ -74,7 +75,7 @@ export default function Projects() {
       name="projects"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
     >
-      <div className="max-w-screen-lg px-4 mx-auto flex flex-col justify-center w-full h-full  md:pt-40 pb-3 md:pb-0">
+      <div className="max-w-screen-lg px-4 mx-auto flex flex-col justify-center w-full h-full  md:pt-16 pb-3 md:pb-0">
         <Fade direction="left" triggerOnce>
           <div className="pb-8 flex flex-col justify-center items-center mt-5 md:mt-0">
             <p className="text-4xl font-bold inline border-b-4 border-gray-500 py-3 text-center ">
@@ -94,28 +95,24 @@ export default function Projects() {
                 delay: i * 0.2,
               }}
               key={id}
-              className="hover:boxshadow rounded-lg hover:scale-105 duration-300 project-box"
+              className="hover:project-box  rounded-lg border border-gray-600  duration-300 "
             >
-              <img
-                src={src}
-                className="rounded-2xl  p-3 cursor-pointer "
-                alt="projectpic"
-              />
+              <img src={src} className="rounded-2xl  p-3  " alt="projectpic" />
               <p className="text-center text-gray-200 cursor-default font-medium">
                 {para}
               </p>
               <div className="flex items-center justify-center">
                 <button
                   onClick={() => openDemoLink(demoLink)}
-                  className=" w-1/2 px-6 py-3 m-4 bg-gradient-to-r duration-200 from-green-800 to-blue-900 rounded-lg hover:demo"
+                  className="project-btn w-1/2 px-6 py-3 m-4 rounded-lg font-semibold duration-150 "
                 >
                   Demo
                 </button>
                 <button
                   onClick={() => openCodeLink(codeLink)}
-                  className=" w-1/2 px-6 py-3 m-4 bg-gradient-to-r duration-200 from-gray-500 to-blue-950 rounded-lg hover:demo  "
+                  className="code-btn w-1/2 px-6 py-3 m-4 rounded-lg font-semibold duration-150    "
                 >
-                  My Code
+                  Code
                 </button>
               </div>
             </motion.div>

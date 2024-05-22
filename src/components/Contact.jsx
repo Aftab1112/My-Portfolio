@@ -54,7 +54,7 @@ export default function Contact() {
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
 
-            <button className="text-white  bg-gradient-to-r from-cyan-600 to to-blue-800 px-6 py-3 my-8 mx-auto flex items-center  rounded-md tracking-wider duration-300 hover:boxshadow">
+            <button className="talk-btn font-semibold text-white  px-6 py-3 my-8 mx-auto flex items-center  rounded-md tracking-wider ">
               Let's Talk
             </button>
           </form>
